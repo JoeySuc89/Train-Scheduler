@@ -19,7 +19,7 @@ $("#train-name-btn").on("click", function(event) {
 
   var trainName = $("#train-name-input").val().trim();
   var destName = $("#destination-input").val().trim();
-  var trainTime = moment($("#time-input").val().trim(), "h:mm a").format("HHmm");
+  var trainTime = moment($("#time-input").val().trim(), "HHmm").format("h:mm a");
   var frequency = moment($("#frequency-input").val().trim(), ":mm").minute();
 
 
